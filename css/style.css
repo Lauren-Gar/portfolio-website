@@ -83,7 +83,23 @@ a {
     background-color: #ff7f50;
     color: #ffffff;
   }
-  
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+  <header>
+  <div class="container">
+    <img src="img/logo.png" alt="Logo" />
+    <nav>
+      <ul class="navigation">
+  <div id="hero">
+    <div class="container">
+      <h1>
+   <footer>
+      <div class="container">
+        <h2></h2>
+
+
   /*
   Colors used:
   Primary Color (Tan): #F7EFE2;
