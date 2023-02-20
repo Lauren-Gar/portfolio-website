@@ -87,19 +87,9 @@ a {
   .container {
     padding: 0 15px;
   }
-  <header>
-  <div class="container">
-    <img src="img/logo.png" alt="Logo" />
-    <nav>
-      <ul class="navigation">
-  <div id="hero">
-    <div class="container">
-      <h1>
-   <footer>
-      <div class="container">
-        <h2></h2>
-
-
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
   /*
   Colors used:
   Primary Color (Tan): #F7EFE2;
