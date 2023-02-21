@@ -147,6 +147,11 @@ a {
       margin: 25px 0; /* 25px top and bottom, 0 left and right */
       display: block;
   }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
   main {
     padding-top: 99px;
