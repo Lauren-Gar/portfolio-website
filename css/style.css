@@ -48,8 +48,19 @@ a {
     color: #ff7f50;
     text-decoration: none;
   }
+
+  nav > ul > li > a:hover,
+  a:focus {
+    color: #ff7f50;
+    text-decoration: none;
+  }
   
   a:visited,
+  a:focus {
+    color: #ff7f50;
+  }
+
+  nav > ul > li > a:visited,
   a:focus {
     color: #ff7f50;
   }
@@ -58,11 +69,17 @@ a {
   a:focus {
     color: #994c30;
   }
+
+  nav > ul > li > a:active,
+  a:focus {
+    color: #994c30;
+  }
   
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
+
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ff7f50;
@@ -93,10 +110,25 @@ a {
   #work h1 {
     text-align: center; /* Centers text */
   }
-  header {
+
+  #work {
     background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 133px;
+  }
+
+  header {
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
+    display: inline-block;
+    position: fixed;
+    width: 100%;
   }
   nav > ul {
     list-style-type: none;
@@ -111,6 +143,8 @@ a {
     font-weight: 700;
     color: #4a4a4a;
   }
+  
+
   /*
   Colors used:
   Primary Color (Tan): #F7EFE2;
