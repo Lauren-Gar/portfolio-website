@@ -257,6 +257,10 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
 #about-title,
 #project-title {
     padding: 8px 0;
