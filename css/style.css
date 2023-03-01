@@ -212,13 +212,12 @@ h4 {
   }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   display: inline-block;
   position: fixed;
   width: 100%;
@@ -227,17 +226,35 @@ header {
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
-nav > ul > li {
-    display: inline-block;
-  }
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
     position: relative
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
 }
 
 #about-title,
@@ -278,7 +295,7 @@ nav > ul > li > a {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 header{
   text-align:unset;
   padding: 20px 0 13px;
@@ -288,6 +305,15 @@ header{
     float: right;
     margin-top: 4px;
   }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
   body {
     font-size: 18px;
   }
