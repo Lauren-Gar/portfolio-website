@@ -6,22 +6,14 @@
   Secondary Color (Orange): #FF4A18;
   */
 
-    * {
+* {
     box-sizing: border-box;
 }
 
-a {
-    color: #ff7f50;
-    text-decoration: none; /* No underlining */
-  }
-
-a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-
-img {
-  width: 100%;
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
 }
 
 body {
@@ -65,72 +57,43 @@ h4 {
   font-weight: 400;
 }
 
-
-
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-  }
-
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+img {
+  width: 100%;
+}
 
 .social-icon {
     display: inline-block;
     width: 24px;
     margin-top: 20px;
 }
+
+.process img {
+  padding: 24px 48px;
+}
+
+
+a {
+    color: #ff7f50;
+    text-decoration: none; /* No underlining */
+  }
+
+a:hover {
+    color: #cc6540;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
   
-  a:hover,
-  a:focus {
+a:focus {
     color: #ff7f50;
     text-decoration: none;
   }
 
-  nav > ul > li > a:hover,
-  a:focus {
-    color: #ff7f50;
-    text-decoration: none;
-  }
-
-  a:visited {
+a:visited {
     color: #ff7f50;
   }
-
-  nav > ul > li > a:visited {
-    color: #ff7f50;
-  }
-
-  a:active {
+  
+a:active {
     color: #994c30;
   }
-
-  nav > ul > li > a:active {
-  color: #994c30;
-}
 
 .button {
     display: inline-block;
@@ -164,12 +127,71 @@ h4 {
       background-color: #ff7f50;
       color: #ffffff;
     }
-  
-  /* Layout styling */
+
+/* Layout styling */
 
 .container {
   margin: 0 15px;
     }
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+  nav > ul > li > a:visited {
+    color: #ff7f50;
+  }
+
 
 .row { 
       margin: 32px 0; /* 32px top and bottom, 0 left and right */
@@ -186,6 +208,21 @@ h4 {
     display: inline-block;
     width: 100%;
   }
+#about-title,
+#project-title {
+    padding: 8px 0;
+    margin: 16px 0;
+    text-align: center; /* Centers text */
+}
+
+#work span {
+  background-color: #ffe4c4;
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  line-height: 1.2;
+  padding: 8px 0;
+}
 
   #about-nav .container {
     padding: 0;
@@ -213,82 +250,7 @@ h4 {
 
 main {
   padding-top: 56px;
-}
-
-header {
-  background-color: #ffffff;
-  padding: 10px 0 4px;
-  display: inline-block;
-  position: fixed;
-  width: 100%;
 } 
-
-nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
-    position: relative
-}
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  padding-right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-#about-title,
-#project-title {
-    padding: 8px 0;
-    margin: 16px 0;
-    text-align: center; /* Centers text */
-}
-
-#work span {
-  background-color: #ffe4c4;
-  font-weight: 700;
-  font-size: 18px;
-  display: block;
-  line-height: 1.2;
-  padding: 8px 0;
-}
 
   #work h2,
   #about h2,
@@ -308,6 +270,36 @@ nav > ul > li > a {
     clear: both;
     display: table;
   }
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 
 /* ==============================
 Medium devices (640px and larger)
@@ -321,14 +313,6 @@ header{
     width: auto;
     float: right;
     margin-top: 4px;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  nav > ul {
-    margin: 1em 0;
   }
 
   body {
@@ -347,12 +331,33 @@ header{
     float: left;
     padding: 10px;
   }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+
+    nav > ul > li {
+    display: inline-block;
+    position: relative;
   }
-}
+
+    .social-icon {
+        width: 36px;
+    }
+
+    nav > ul > li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -389,11 +394,8 @@ Large devices (1024px or larger)
 #project-process h2 {
   font-size: 2.5em;
 }
-.process img {
-  padding: 24px 48px;
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px){
 }

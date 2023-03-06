@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
-         <i class="fa-light fa-bars"></i>
          <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta name="author" content="Lauren Garcia">
          <meta name="description" content="UI/UX Designer South Florida">
          <title>Lauren Garcia</title>
@@ -11,11 +11,15 @@
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+         <script src="https://kit.fontawesome.com/01b7c8dea1.js" crossorigin="anonymous">            
+         
+         </script>
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
          <link rel="stylesheet" type="text/css" href="css/style.css">
    </head>
+
    <body>
+      <!--Header-->
       <a name="top" id="top"></a>
       <header id="navigation">
          <div class="container">
@@ -25,8 +29,15 @@
                <ul class="navigation">
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                  <li>
+                     <a href="#contact" 
+         onclick="menuToggle()">Contact</a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                        <i class="fas fa-bars"></i>
+                     </a>
+                  </li>
                </ul>
             </nav>
          </div>
@@ -689,6 +700,7 @@
          </div>
       </div>
    </main>
+
    <footer id="contact">
       <div class="container">
          <h2>Get in Touch</h2>
@@ -712,4 +724,5 @@
          </footer>
          <script src="js/scripts.js"></script>
    </body>
+   
 </html>
