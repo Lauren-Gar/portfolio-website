@@ -13,7 +13,7 @@
 header {
   background-color: #ffe4c4;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 40px;
 }
 
 body {
@@ -70,7 +70,6 @@ img {
 .process img {
   padding: 24px 48px;
 }
-
 
 a {
     color: #ff7f50;
@@ -134,14 +133,11 @@ a:active {
   margin: 0 15px;
     }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -151,11 +147,13 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  display: inline-block;
-  padding: 0 15px;
-  color: #000000;
+  padding: 0 5px;
   text-transform: uppercase;
-  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+  position: relative;
+  z-index 0;
+  cursor: pointer;
 }
 
 .navtoggle li:not(:last-child) {
@@ -170,27 +168,28 @@ nav > ul > li > a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  padding-right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 16px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+  padding: 0 0 16px;
 }
-
-  nav > ul > li > a:visited {
-    color: #ff7f50;
-  }
 
 
 .row { 
@@ -270,36 +269,6 @@ main {
     clear: both;
     display: table;
   }
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-  }
-
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
 
 /* ==============================
 Medium devices (640px and larger)
@@ -312,7 +281,7 @@ header{
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: -65px;
   }
 
   body {
@@ -321,6 +290,7 @@ header{
 
   .col-md-6 {
     width: 50%;
+    margin-top: -20px;
   }
 
   .col-md-12 {
@@ -332,16 +302,44 @@ header{
     padding: 10px;
   }
 
-    nav > ul > li {
-    display: inline-block;
+  #work h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+#about h4,
+#project-background h4 {
+    margin-top: 0;
+}
+#about h2 {
+    margin-top: 16px;
+}
+#about img {
+    max-width: 450px;
     position: relative;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#project-title img {
+    max-width: 750px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills > ul {
+    margin: 0;
+}
+  
+nav > ul > li {
+  padding: 0 16px;
+}
 
-    .social-icon {
-        width: 36px;
-    }
+.social-icon {
+  width: 36px;
+}
 
-    nav > ul > li {
+nav > ul > li {
     display: inline-block;
     padding: 0 10px;
   }
@@ -357,6 +355,29 @@ header{
   nav > ul {
     margin: 1em 0;
   }
+
+  div.pullUp a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #143a52;
+    opacity: 0.25;
+    background-blend-mode: multiply;
+    transition: all 0.3s;
+    z-index: -1;
+}
+div.pullUp a:hover:before {
+    height: 100%;
+}
+.skills-tools h2 {
+    text-align: center;
+    padding: 8px 0;
+    margin: 32px 0 -12px 0;
+}
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -378,7 +399,16 @@ Large devices (1024px or larger)
 }
 .col-lg-12 {
   width: 100%;
+  margin-top: -18px;
 }
+
+.col-lg-12-skills {
+  width: 100%;
+  margin-top: -18px;
+  float: left;
+  padding: 0 20px 40px;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -394,8 +424,36 @@ Large devices (1024px or larger)
 #project-process h2 {
   font-size: 2.5em;
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px){
+
+/* CSS Animation */
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
