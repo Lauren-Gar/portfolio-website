@@ -201,7 +201,7 @@ nav > ul > li > a {
     text-align: center; /* Centers text */
   }
 
-  #work,
+ 
   #contact {
     background-color: #ffe4c4;
     padding: 20px 0;
@@ -230,7 +230,7 @@ nav > ul > li > a {
   }
 
   #work .row{
-    padding: 0px; 
+    padding: 20px 0px; 
     margin-top: -15px;
     padding-bottom: 0px;
     border-bottom: 0px;
@@ -247,10 +247,6 @@ nav > ul > li > a {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     display: block;
   }
-
-main {
-  padding-top: 56px;
-} 
 
   #work h2,
   #about h2,
