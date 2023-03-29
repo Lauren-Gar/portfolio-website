@@ -11,7 +11,7 @@
 }
 
 header {
-  background-color: #ffe4c4;
+  background-color: #F7EFE2;
   text-align: center;
   padding: 10px 0 40px;
 }
@@ -53,7 +53,7 @@ h3 {
   font-weight: 300;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.5em;
   font-weight: 200;
 }
 
@@ -72,60 +72,45 @@ img {
 }
 
 a {
-    color: #ff7f50;
+    color: #FF4A18;
     text-decoration: none; /* No underlining */
   }
 
 a:hover {
-    color: #cc6540;
+    color: #FF4A18;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   
 a:focus {
-    color: #ff7f50;
+    color: #FF4A18;
     text-decoration: none;
   }
 
 a:visited {
-    color: #ff7f50;
+    color: #FF4A18;
   }
   
 a:active {
-    color: #994c30;
+    color: #FF4A18;
   }
 
 .button {
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: #F7EFE2;
+    color: #ff4a18;
     font-weight: 400;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
-    box-shadow: 0px 2px 2px grey;
+    border-radius: 300px;
+    box-shadow: 1px 2px 2px grey;
     text-transform: uppercase;
-    padding: 10px;
-    border: 2px solid #994c30;
+    border: 2px solid #ff4a18;
     transition: 0.2s opacity;
   }
-
-.button:hover {
-    opacity: 0.8;
-  }
-
-.button.contact {
-      background-color: transparent;
-      color: #ff7f50;
-      text-transform: uppercase;
-      border: 2px solid #ff7f50;
-    }
-.button.contact:hover {
-      background-color: #ff7f50;
-      color: #ffffff;
-    }
 
 /* Layout styling */
 
@@ -149,7 +134,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 5px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   position: relative;
   z-index: 0;
@@ -197,13 +182,14 @@ nav > ul > li > a {
       margin: 32px 0; /* 32px top and bottom, 0 left and right */
   }
 
+
   #work h1 {
     text-align: center; /* Centers text */
   }
 
  
   #contact {
-    background-color: #ffe4c4;
+    background-color: #F7EFE2;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -243,7 +229,7 @@ nav > ul > li > a {
     .row {
     padding-bottom: 25px;
     padding-top: 15px;
-    text-align: left;
+    text-align: center;
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     display: block;
   }
@@ -254,7 +240,7 @@ nav > ul > li > a {
   #project-process h2 {
       text-align: center;
       padding: 8px 0;
-      margin: 32px 0 16px 0;
+      margin: 32px 0 50px 0;
   }
 
   #project-background h3 {
@@ -330,6 +316,8 @@ header{
 }
 .skills > ul {
     margin: 0;
+    list-style-type: none;
+  
 }
   
 nav > ul > li {
@@ -364,7 +352,6 @@ nav > ul > li {
     left: 0px;
     bottom: 0px;
     content: '';
-    background: #143a52;
     opacity: 0.25;
     background-blend-mode: multiply;
     transition: all 0.3s;
