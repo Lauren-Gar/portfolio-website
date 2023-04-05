@@ -69,11 +69,7 @@ img {
 
 a {
   color: #ff4a18;
-}
-
-a:hover {
-  color: #ff4a18;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none;
 }
 
 a:focus {
@@ -83,6 +79,11 @@ a:focus {
 
 a:visited {
   color: #ff4a18;
+}
+
+a:hover {
+  color: #ff4a18;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active {
@@ -139,6 +140,10 @@ nav > ul > li > a {
   position: relative;
   z-index: 0;
   cursor: pointer;
+}
+
+nav > ul > li > a:hover {
+  color: #ff4a18;
 }
 
 .navtoggle li:not(:last-child) {
