@@ -1,119 +1,151 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Lauren Garcia" />
+    <meta name="description" content="UI/UX Designer South Florida" />
+    <title>Lauren Garcia</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/branding/favicon.ico"
+      sizes="32x32"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a3921eb820.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-   <meta charset="utf-8">
-   <meta name="author" content="Lauren Garcia">
-   <meta name="description" content="UI/UX Designer South Florida">
-   <title>Lauren Garcia</title>
-   <link rel="icon" type="image/png" href="img/branding/favicon.ico" sizes="32x32">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:wght@300;400;500&display=swap" 
-      rel="stylesheet">
-   <script src="https://kit.fontawesome.com/a3921eb820.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-   <!--Header-->
-   <header id="navigation">
+  <body>
+    <!--Header-->
+    <header id="navigation">
       <div class="container">
-         <div class="navtoggle" id="myNavtoggle">
-            <h3> Lauren Garcia</h3>
-            <a href="index.html">
-            </a>
-            <div class="pullUp">
-               <nav>
-                  <ul class="navigation">
-                     <li><a href="index.html">Portfolio</a></li>
-                     <li><a href="about.html">About Me</a></li>
-                     <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
-                     <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i>
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
-            </div>
-         </div>
+        <div class="navtoggle" id="myNavtoggle">
+          <h3>Lauren Garcia</h3>
+          <a href="index.html"> </a>
+          <div class="pullUp">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-</header>
-<main>
-   <div id="about-title">
-      <div class="container">
-         <h1>Lauren Garcia</h1>
+    </header>
+    <main>
+      <div id="about-title">
+        <div class="container">
+          <h1>Lauren Garcia</h1>
+        </div>
       </div>
-   </div>
-   <div id="about">
-      <div class="container">
-         <picture>
-            <source media="(max-width: 767px)" srcset="img/profile_picture/profile@1x.jpg">
-            <img src="img/profile_picture/profile@2x.jpg" alt="Profile Photo">
-         </picture>
-         </div>
-         <div class="container">
-            <div class="row">
-            <h2>Let me be your partner in taking your business to the next level!</h2>
-            <p>
-               I am a South Florida based focused on bringing your product to life through a unique and personalized interface experience. Having always been drawn to beautiful things and cultivated expereinces, I have an eye for detail and a passion to create a compelling interactive product experience that algins with your company's values and goals.  I use my attention to detail and problem solving skills to create user-friendly and functional mobile/web interfaces. 
+      <div id="about">
+        <div class="banner-image"></div>
+              <h2> Let me be your partner in taking your business to the next level!
+            </h2>
+          <div class="imgwrapper">
+            <div class="box">
+          <p>
+              I am a South Florida based focused on bringing your product to
+              life through a unique and personalized interface experience.
+              Having always been drawn to beautiful things and cultivated
+              expereinces, I have an eye for detail and a passion to create a
+              compelling interactive product experience that algins with your
+              company's values and goals. I use my attention to detail and
+              problem solving skills to create user-friendly and functional
+              mobile/web interfaces.
             </p>
-            <p>Although I am based in South Florida, I provide global support virtually.</p>
-         </div>
-         <div class="skills-tools col-md-12">
-            <h2>Skills &amp; Tools</h2>
-            <div class="row">
-               <div class="skills col-md-6">
-            <h4>Skills</h4>
-            <ul>
-               <li> User Research</li>
-               <li>UI Responsive Screen Design</li>
-               <li>Develop User Personas</li>
-               <li>Paper prototyping</li>
-               <li>Wireframing</li>
-               <li>User Flows</li>
-               <li>User Testing</li>
-               <li>High Fidelity Screens</li>
-               <li>Frontend Development</li> 
-            </ul>
-         </div>
-         <div class="skills col-md-6">
-            <h4>Digital Tools</h4>
-            <ul>
-               <li>Figma</li>
-               <li>Canva</li>
-               <li>Usability Hub</li>
-               <li>Marvel</li> 
-            </ul>
-         </div>
-         </div>
-      </div>
-   </div>
-</div>
- <div class="resumecontainer">
-   <a href="files/resume.pdf" target="_blank" class="button"> My Resume</a>
-   </div>
-</main>
-<footer id="contact">
-   <div class="contactcontainer">
-      <h2>Get in Touch</h2>
-      <p>Like my work and want to discuss opportunities? Please get in touch!</p>
-      <div>
-         <a href="mailto:laurengarcia888@gmail.com" class="button contact">Email me</a>
-      </div>
-            <div class="social-icon">
-               <a href="https://www.linkedin.com/in/lauren-garcia8/"> <i class="fa-brands fa-linkedin-in fa-3x"></i>
-               </a>
-            </div>
-            <p>Copyright Lauren-Garcia 2023</p>
-         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script src="js/scripts.js"></script>
-   </body>
 
-   </html>
+            <p>
+              Although I am based in South Florida, I provide global support
+              virtually.
+            </p>
+            </div>
+      </div>
+          <div class="skills-tools col-md-12">
+            <h2>Skills &amp; Tools</h2>
+            <div class="box">
+            <div class="row">
+              <div class="skills col-md-6">
+                <h4>Skills</h4>
+                <ul>
+                  <li>User Research</li>
+                  <li>UI Responsive Screen Design</li>
+                  <li>Develop User Personas</li>
+                  <li>Paper prototyping</li>
+                  <li>Wireframing</li>
+                  <li>User Flows</li>
+                  <li>User Testing</li>
+                  <li>High Fidelity Screens</li>
+                  <li>Frontend Development</li>
+                </ul>
+              </div>
+              <div class="skills col-md-6">
+                <h4>Digital Tools</h4>
+                <ul>
+                  <li>Figma</li>
+                  <li>Canva</li>
+                  <li>Usability Hub</li>
+                  <li>Marvel</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      <div class="resumecontainer">
+        <a href="files/resume.pdf" target="_blank" class="button"> My Resume</a>
+      </div>
+      </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="contactcontainer">
+        <h2>Get in Touch</h2>
+        <p>
+          Like my work and want to discuss opportunities? Please get in touch!
+        </p>
+        <div>
+          <a href="mailto:laurengarcia888@gmail.com" class="button contact"
+            >Email me</a
+          >
+        </div>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/lauren-garcia8/">
+            <i class="fa-brands fa-linkedin-in fa-3x"></i>
+          </a>
+        </div>
+        <p>Copyright Lauren-Garcia 2023</p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
