@@ -123,14 +123,7 @@ a:active {
   margin: 0 15px;
 }
 
-.banner-image {
-	background-image: url("../img/profile_picture/profile@2x.jpg");
-  height: 500px;
-  background-position: 0 -100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 nav > ul {
   list-style-type: none;
@@ -279,6 +272,15 @@ nav > ul > li > a:hover {
   width: 100%;
 }
 
+.banner-image {
+	background-image: url("../img/profile_picture/profile@2x.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -289,12 +291,7 @@ Medium devices (640px and larger)
   }
 
   .banner-image {
-    background-image: url("../img/profile_picture/profile@1x.jpg");
-    height: 500px;
     background-position: 0 -100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
   }
   
   nav {
