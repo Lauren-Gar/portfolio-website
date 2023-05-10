@@ -11,7 +11,7 @@
 }
 
 header {
-  background-color: #efe8dd;
+  background-color: #f7efe2;
   position: fixed;
   text-align: center;
   padding: 10px 0 40px;
@@ -192,7 +192,7 @@ nav > ul > li > a:hover {
 }
 
 .box {
-  background-color: rgb(254, 255, 240);
+  background-color: #fffffb;
   padding: 20px;
   margin: 50px;
   text-align: center;
