@@ -18,7 +18,7 @@ header {
 
 body {
   background-color: #efe8dd;
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -26,28 +26,28 @@ body {
 }
 
 h1 {
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 2.75em;
   font-weight: 400;
   line-height: 1.4;
 }
 
 h2 {
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 2.25em;
   font-weight: 400;
   line-height: 1.4;
 }
 
 h3 {
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 1.75em;
   font-weight: 300;
   line-height: 1.4;
 }
 
 h4 {
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 1.5em;
   font-weight: 200;
   line-height: 1.4;
@@ -94,7 +94,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #f7efe2;
-  color: 2b4920;
+  color: #528d3b;
   font-weight: 400;
   padding-left: 30px;
   padding-right: 30px;
