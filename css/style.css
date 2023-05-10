@@ -12,7 +12,6 @@
 
 header {
   background-color: #f7efe2;
-  position: fixed;
   text-align: center;
   padding: 10px 0 40px;
 }
@@ -288,7 +287,6 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    position: fixed;
     padding: 20px 0 13px;
   }
 
