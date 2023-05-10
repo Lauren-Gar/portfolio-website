@@ -11,18 +11,18 @@
 }
 
 header {
-  background-color: #f7efe2;
+  background-color: #efe8dd;
   text-align: center;
   padding: 10px 0 40px;
 }
 
 body {
-  background-color: #a8cf99;
+  background-color: #efe8dd;
   font-family: 'Open-Sans', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #2b4920;
+  color: #528d3b;
 }
 
 h1 {
@@ -69,26 +69,26 @@ img {
 }
 
 a {
-  color: #2b4920;
+  color: #528d3b;
   text-decoration: none;
 }
 
 a:focus {
-  color: #2b4920;
+  color: #528d3b;
   text-decoration: none;
 }
 
 a:visited {
-  color: #2b4920;
+  color: #528d3b;
 }
 
 a:hover {
-  color: #2b4920;
+  color: #528d3b;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active {
-  color: #2b4920;
+  color: #528d3b;
 }
 
 .button {
