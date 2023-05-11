@@ -1,6 +1,6 @@
 /*
   Colors used:
-  Primary Color (Tan): #F7EFE2;
+  Primary Color (Tan): #f7efe2;
   Primary Color (Black): #000000;
   Secondary Color (Yellow): #F6E74F;
   Secondary Color (Orange): #FF4A18;
@@ -17,7 +17,7 @@ header {
 }
 
 body {
-  background-color: #efe8dd;
+  background-color: #f7efe2;
   font-family: 'Lato', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
