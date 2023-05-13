@@ -290,6 +290,11 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  .project{
+  width: 1000px;
+  margin: auto;
+  }
+
   .banner-image {
     background-position: 0 -100px;
   }
@@ -399,6 +404,11 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .project{
+    width: 1024px;
+    margin: auto;
+    }
+ 
   .col-lg-3 {
     width: 25%;
   }
